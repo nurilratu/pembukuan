@@ -1,0 +1,74 @@
+<template name="home">
+<main>
+        <div class="row">
+          <div class="col s6">
+            <div style="padding: 35px;" align="center" class="card">
+              <div class="row">
+                <div class="left card-title">
+                  <b>Cashier</b>
+                </div>
+              </div>
+    
+              <div class="row">
+                <a href="/cashier" class="left: 0;">
+                  <div style="padding: 30px; margin-left: 30%;" class="grey lighten-3 col s5 waves-effect">
+                    <i class="indigo-text text-lighten-1 large material-icons">store</i>
+                    <span class="indigo-text text-lighten-1"><h5>Calculate</h5></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col s6">
+            <div style="padding: 35px;" align="center" class="card">
+              <div class="row">
+                <div class="left card-title">
+                  <b>Log</b>
+                </div>
+              </div>
+              <div class="row">
+                <a href="/log">
+                  <div style="padding: 30px; margin-left: 30%;" class="grey lighten-3 col s5 waves-effect">
+                    <i class="indigo-text text-lighten-1 large material-icons">assignment</i>
+                    <span class="indigo-text text-lighten-1"><h5>Orders</h5></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        
+      </main>
+    
+      <footer class="indigo page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h5 class="white-text">Basmallah Mart</h5>
+              <ul id='credits'>
+                <li>
+                  Manyar Sabrangan VI/5 
+                </li>
+                <li>
+                  Surabaya
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+             <span>Design By <a style='font-weight: bold;' href="https://github.com/piedcipher" target="_blank">Nuril Ratu Qurani</a></span>
+          </div>
+        </div>
+      </footer>
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+      <script>
+        $('.button-collapse').sideNav();
+        $('.collapsible').collapsible();
+        $('select').material_select();
+      </script>
+</template>

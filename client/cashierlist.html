@@ -1,0 +1,38 @@
+<template name="cashierlist">
+    <div class="small-12 large-8 columns" id="items-view">
+        <table class="small-12" id="main">
+        <thead class="expand">
+        <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+            {{ #each Projects }}
+                <tr>
+                    <td>{{ nama }}</td>
+                    <td>{{ harga }}</td>
+                    <td>{{ qty }}</td>
+                    <td>{{ total }}</td>
+                    <td>Delete</td>
+                </tr>
+            {{ /each }}
+        </tbody>
+        </table>
+    </div>
+    <div class="small-12 columns" id="total-view"></div>
+<!-- <script id="total-template" type="text/template"> -->
+<table class="left" id="total">
+    <tbody>
+    <tr>
+        <th>Total Pembelian:</th>
+        <th id="total-price"></th>
+    </tr>
+    </tbody>
+</table>
+<a class="waves-effect waves-light btn-large #01579b light-blue darken-4 right">Submit</a>
+<!-- </script> -->
+</template>
